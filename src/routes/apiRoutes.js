@@ -1,8 +1,10 @@
 const express=require('express');
 const app=express();
-const productRoutes=require('./productRoutes');
+const matchRoutes=require('./matchRoutes');
+const agentRoutes=require('./agentRoutes');
 
-app.use('/products',productRoutes);
+app.use('/matches',matchRoutes);
+app.use('/agents',agentRoutes);
 
 
 
